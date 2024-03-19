@@ -1,12 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage | Health Care</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-    <h1>Hello!</h1>
-</body>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/bootstrap-grid.css" />
+    <script
+      src="https://kit.fontawesome.com/a0c784d1ee.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <p>Find doctors nearby</p>
+      </div>
+      <div class="phone">
+        <div class="phone-icon">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="contact-details">
+          <p class="consultations">Free consultations</p>
+          <p class="phone-number">+xx (xxx) xxx-xx-xx</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="hero">
+        <div class="row">
+          <div class="col-6">
+            <h1>Find quality health care nearby</h1>
+            <p>Find top-rated doctors and specialists near you.</p>
+            <button class="cta-button">Discover care providers</button>
+          </div>
+          <div class="col-6">
+            <img
+              src="icons/doctors-hero.svg"
+              alt="Doctors"
+              class="hero-doctors"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="how-does-it-work">
+        <h2>How does it work?</h2>
+        <div class="row cards">
+          <div class="col-3">
+            <img src="icons/medical-care.svg" alt="Medical care" />
+            <h3>Step 1</h3>
+            <p>Choose your specialty</p>
+          </div>
+          <div class="col-3 card">
+            <img src="icons/location.svg" alt="Location" />
+            <h3>Step 2</h3>
+            <p>Specify your location</p>
+          </div>
+          <div class="col-3 card">
+            <img src="icons/filter.svg" alt="Filtering" />
+            <h3>Step 3</h3>
+            <p>Filter you search based on your preferences</p>
+          </div>
+          <div class="col-3 card">
+            <img src="icons/doctors.svg" alt="Doctors" />
+            <h3>Step 4</h3>
+            <p>Explore health care providers’ profiles</p>
+          </div>
+        </div>
+        <button class="cta-button">Find your health care provider</button>
+      </div>
+      <div class="why-us">
+        <h2>Why us?</h2>
+        <div class="row info-cards">
+          <div class="col-4">
+            <div class="info-card">
+              <div class="circle"><i class="fa-solid fa-book-medical"></i></div>
+              <h3>Comprehensive directory</h3>
+              <p>
+                Our healthcare services directory provides a wide range of
+                medical care options within your specific region.
+              </p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="info-card">
+              <div class="circle"><i class="fa-solid fa-circle-check"></i></div>
+              <h3>Verified information</h3>
+              <p>
+                We verify and update listings regularly to provide the most
+                up-to-date information about healthcare providers, services, and
+                facilities.
+              </p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="info-card">
+              <div class="circle"><i class="fa-solid fa-user"></i></div>
+              <h3>Easy-to-use</h3>
+              <p>
+                An intuitive interface allows visitors to easily navigate
+                through the directory and find the healthcare services they need
+                quickly and efficiently.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="action">
+        <h2>Find your health care provider now!</h2>
+        <form>
+          <input
+            type="text"
+            name="Service"
+            id=""
+            placeholder="Service"
+            class="service-input"
+          />
+          <input
+            type="text"
+            name="Service"
+            id=""
+            placeholder="Location"
+            class="location-input"
+          />
+          <input type="submit" value="Find" class="action-form-submit" />
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="logo">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <p>Find doctors nearby</p>
+      </div>
+      <div class="documents-footer">
+        <p>Privacy policy</p>
+        <p>Terms of service</p>
+      </div>
+      <div class="phone">
+        <div class="phone-icon">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+
+        <div class="contact-details-footer">
+          <p>Contact</p>
+          <p class="phone-number">+xx (xxx) xxx-xx-xx</p>
+          <p class="gmail">health.now@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

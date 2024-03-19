@@ -1,3 +1,227 @@
-h1 {
-    color:red;
+:root{
+    --primary-color: #339989;
+    --text-color: #131515;
+    --muted-text: #495057;
+    --background: #FFFAFB;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+    /* You can specify different font file formats for better browser compatibility */
+  }
+  body {
+    color:var(--muted-text);
+    background: var(--background);
+    margin:0;
+    font-family:sans-serif;
+  }
+  h1 {
+    font-size:64px;
+    line-height: 110%;
+    letter-spacing: -2%;
+    margin:0;
+  }
+  h2 {
+    font-size:56px;
+    line-height: 110%;
+    letter-spacing: -2%;
+    margin:0;
+  }
+
+.navbar {
+    border-bottom: 0.2px solid var(--muted-text);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 110px;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    align-items: center;
+    line-height: 0;
+  }
+  .logo i {
+    font-size:40px;
+    color:var(--primary-color);
+  }
+  .phone {
+    display: flex;
+    gap: 17px;
+    margin: auto 0;
+  }
+  .phone-icon{
+    background: var(--primary-color);
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    position:relative;
+    line-height:50px;
+  }
+  .phone-icon i {
+    font-size:22px;
+    text-align: center;
+    color:var(--background);
+    position:absolute;
+    top:14px;
+    left:13px;
+  }
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    line-height:0;
+  }
+  .consultations {
+    color: var(--muted-text);
+    font-size:14px;
+    text-transform: uppercase;
+  }
+  .phone-number {
+    color: var(--primary-color);
+    font-size:20px;
+    margin:10px 0;
+  }
+
+  /* HERO */
+  .hero {
+    margin-top:100px;
+  }
+  .hero p{
+    font-size:22px;
+  }
+  .cta-button {
+    color:var(--background);
+    font-weight: bold;
+    font-size: 20px;
+    background: var(--primary-color);
+    padding:33px 48px;
+    text-decoration: none;
+    border-radius:22px;
+    border:none;
+    transition:200ms all ease-in-out;
+  }
+  .cta-button:hover {
+    background: #226359;
+    cursor:pointer;
+  }
+  .hero-doctors {
+    width:540px;
+  }
+  .how-does-it-work {
+    margin-top: 375px;
+  }
+  .how-does-it-work h2{
+    margin-bottom: 40px;
+  }
+  .how-does-it-work h3 {
+    font-size: 21;
+    font-weight:bold;
+    color:var(--muted-text);
+  }
+  .how-does-it-work p {
+    font-size: 21;
+    color:var(--text-color);
+  }
+  .how-does-it-work img {
+    width:220px;
+    padding:20px;
+    height:220px;
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 4px 4px 3px rgba(51, 153, 137, 0.3);
+  }
+  .cards {
+    display:flex;
+    justify-content: space-around;
+    align-items: start
+  }
+
+  /*WHY US*/
+  .why-us {
+    margin-top: 375px;
+  }
+  .why-us h2 {
+    margin-bottom: 60px;
+  }
+  .info-card{
+    background: rgba(51, 153, 137, 0.2);
+    height:280px;
+    text-align: center;
+    border-radius:22px;
+    padding-top:67px;
+  }
+  .circle {
+    background:var(--background);
+    border-radius: 50%;
+    width:60px;
+    height:60px;
+    line-height:60px;
+    font-size:30px;
+    margin-left:150px;
+  }
+
+  .info-card h3 {
+    font-size:22px;
+    font-weight:bolder;
+  }
+  .info-card p{
+    font-size:16px;
+    margin: 0 35px;
+  }
+ 
+  /*ACTION*/
+  .action {
+    text-align:center;
+    margin:280px 200px 100px;
+  }
+  input {
+    padding: 25px;
+    border:none;
+    height:40px;
+    width:530px;
+    border-radius: 16px;
+  }
+  .service-input, .location-input {
+    background: rgba(51, 153, 137, 0.2);
+    font-size: 20px;
+    outline: none;
+    margin-top:20px;
+  }
+  .action input::placeholder {
+    color: rgba(43, 44, 40, 0.56);
+  }
+  .action-form-submit {
+    height: 80px;
+    width: 580px;
+    margin-top: 20px;
+    background: var(--primary-color);
+    font-weight: bold;
+    color: var(--background);
+    font-size: 24px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/*FOOTER*/
+.footer {
+    border-bottom: 0.2px solid var(--muted-text);
+    background-color: rgba(51, 153, 137, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 110px;
+}
+.contact-details-footer {
+    display: flex;
+    flex-direction: column;
+    line-height:0;
+}
+.footer .phone-icon {
+    margin-top:16px;
+}
+.documents-footer {
+    display:flex;
+    gap: 30px;
 }
